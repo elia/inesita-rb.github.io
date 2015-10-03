@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,12 +19,11 @@
     <div id="container">
       <div class="inner">
         {% include header.html %}
-        {% include component.html %}
-        {% include router.html %}
-        {% include state.html %}
+        {{ content }}
         {% include footer.html %}
       </div>
     </div>
     {% include analytics.html %}
   </body>
 </html>
+
