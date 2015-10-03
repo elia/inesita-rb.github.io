@@ -35,18 +35,32 @@ You&#39;re asking how you can start ?</p>
 
 <p>To start you need a working ruby environment.
 Firstly we&#39;re install a gem:</p>
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">inesita</span>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>gem install inesita
 </code></pre></div>
 <p>Now we can create a sample application:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ inesita new app_name
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>inesita new app_name
 </code></pre></div>
 <h2>Application</h2>
 
+<p>This is where all magic starts</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">Inesita</span><span class="o">::</span><span class="no">Application</span><span class="o">.</span><span class="n">new</span><span class="p">(</span>
+  <span class="ss">router</span><span class="p">:</span> <span class="no">Router</span><span class="p">,</span>
+  <span class="ss">store</span><span class="p">:</span> <span class="no">Store</span><span class="p">,</span>
+  <span class="ss">layout</span><span class="p">:</span> <span class="no">Layout</span>
+<span class="p">)</span><span class="o">.</span><span class="n">mount!</span><span class="p">(</span><span class="vg">$document</span><span class="o">.</span><span class="n">body</span><span class="p">)</span>
+</code></pre></div>
 <h2>Router</h2>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Router</span>
+  <span class="kp">include</span> <span class="no">Inesita</span><span class="o">::</span><span class="no">Router</span>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-<h2>and The State</h2>
+  <span class="k">def</span> <span class="nf">routes</span>
+    <span class="n">route</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="ss">to</span><span class="p">:</span> <span class="no">Home</span>
+    <span class="n">route</span> <span class="s1">&#39;/welcome&#39;</span><span class="p">,</span> <span class="ss">to</span><span class="p">:</span> <span class="no">Welcome</span>
+    <span class="n">route</span> <span class="s1">&#39;/goodbye&#39;</span><span class="p">,</span> <span class="ss">to</span><span class="p">:</span> <span class="no">Goodbye</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+<h2>Store</h2>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
