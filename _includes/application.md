@@ -1,6 +1,6 @@
 ## Application
 
-This is where all magic starts
+This is where all magic starts!
 
 ```ruby
 Inesita::Application.new(
