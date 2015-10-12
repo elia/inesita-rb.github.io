@@ -57,10 +57,10 @@ body {
 }
 
 a {
-  color: #d5000d;
+  color: #666;
 }
 a:hover {
-  color: #c5000c;
+  color: #444;
 }
 
 header {
@@ -315,13 +315,6 @@ footer {
   font-size: 13px;
   color: #aaa;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
-}
-
-footer a {
-  color: #666;
-}
-footer a:hover {
-  color: #444;
 }
 
 /* MISC */
