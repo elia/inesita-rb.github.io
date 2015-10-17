@@ -1,3 +1,39 @@
 ## Store
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+`Store` is a simply a wrapper for your data. You decides how you store it, and how to fetch it.
+
+```ruby
+class Store
+  include Inesita::Store
+
+  def initialize
+    @store = {}
+  end
+
+  def set_value(value)
+    @store[:value] = value
+  end
+
+  def get_value
+    @store[:value]
+  end
+end
+```
+
+This is the simplest store, that stores data within Hash. You can use it with your components like this:
+
+```ruby
+class Input
+  include Inesita::Component
+
+  def change(e)
+    store.set_value(e.target.value)
+    update_dom
+  end
+
+  def render
+    input type: "text", class: "form-control", value: store.get_value, onchange: ->(e) { change(e) }
+  end
+end
+```
+
