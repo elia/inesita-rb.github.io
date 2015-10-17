@@ -9,3 +9,4 @@ layout: default
 {% include layout.md %}
 {% include store.md %}
 {% include styles.md %}
+{% include other.md %}
