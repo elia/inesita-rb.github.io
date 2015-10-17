@@ -15,7 +15,7 @@ end
 
 As we see. When browser points to `/` `Home` component is rendered, when we go to `/description` application will render `Description` component.
 You can pass a props to components with props hash.
-All routes a automaticaly named. First route is named `:home` socound one `:description`
+All routes a automatically named. First route is named `:home` second one `:description`
 You can use this names while creating link in components. Router instance is available in every component.
 For example lets create a simple navigation bar with `bootstrap`:
 

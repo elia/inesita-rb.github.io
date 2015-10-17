@@ -1,6 +1,6 @@
 ## Component
 
-Component is a crutial part.
+Component is a crucial part.
 Lets create simple component named `Clock`
 
 ```ruby
@@ -19,7 +19,7 @@ class Clock
 end
 ```
 
-Now we should mount it to dom element to `<div id="clock"></div>`:
+Now we should mount it to DOM element to `<div id="clock"></div>`:
 
 ```ruby
 $document.ready do
@@ -50,7 +50,7 @@ end
 ```
 
 Beautiful, clock works like a charm.
-We're add a simple block that executes every 1 secound. In this case we re refresh a `@time` variable and update component with `update_dom`
+We're add a simple block that executes every 1 second. In this case we re refresh a `@time` variable and update component with `update_dom`
 Simple, isn't it ?
 
 Components can be nested. For example add another component, that wraps `Clock` into `code` tag:
