@@ -1,6 +1,6 @@
 ## Layout
 
-`Layout` its a component that is used as a common part on every page.
+`Layout` is a component that is used as a common part on every page.
 
 ```ruby
 class Layout

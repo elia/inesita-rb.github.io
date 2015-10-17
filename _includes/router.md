@@ -51,6 +51,6 @@ end
 
 `url_for(:name)` method return an url for given route.
 
-`current_url?(:name)` return `true` if a giver route is currently set.
+`current_url?(:name)` return `true` if a given route is currently set.
 
 When we're use an `a` tag in components that are belongs to `Inesita::Application`, `onclick` are handled by router.
