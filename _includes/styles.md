@@ -1,13 +1,13 @@
 ## Styles
 
-Default style sheet is `app/stylesheet.css.sass`. It use sass. You can create you own stylesheets structure and include it in this files.
-For example if we want to include bootstrap:
+The default stylesheet is `app/stylesheet.css.sass`. It uses [Sass](http://sass-lang.com). You can create you own stylesheets and `@import` them in this file.
+For example, if we want to include [Bootstrap](http://getbootstrap.com):
 
 ```sass
 @import "bootstrap"
 ```
 
-External styles are included within a Gemfile using a `rails-assets.org` service.
+External styles can be included in your Gemfile using the `rails-assets.org` service.
 
 ```
 source 'https://rails-assets.org' do
