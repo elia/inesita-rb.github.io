@@ -1,7 +1,7 @@
 ## Component
 
 Component is a crucial part.
-Lets create simple component named `Clock`
+Lets create a simple component named `Clock`
 
 ```ruby
 class Clock
@@ -19,7 +19,7 @@ class Clock
 end
 ```
 
-Now we should mount it to DOM element to `<div id="clock"></div>`:
+Now we should mount it to DOM element `<div id="clock"></div>`:
 
 ```ruby
 $document.ready do
@@ -27,7 +27,7 @@ $document.ready do
 end
 ```
 
-It works, but what's the clock that won't refresh ? Let's fix it:
+It works, but what's a clock that won't refresh? Let's fix it:
 
 ```ruby
 class Clock
@@ -50,10 +50,10 @@ end
 ```
 
 Beautiful, clock works like a charm.
-We're add a simple block that executes every 1 second. In this case we re refresh a `@time` variable and update component with `update_dom`
-Simple, isn't it ?
+We have added a simple block that executes once a second. In this case we reset the `@time` variable and update the component with `update_dom`
+Simple, isn't it?
 
-Components can be nested. For example add another component, that wraps `Clock` into `code` tag:
+Components can be nested. For example, to add another component that wraps `Clock` in a `code` tag:
 
 ```ruby
 class CodeClock
@@ -75,7 +75,7 @@ $document.ready do
 end
 ```
 
-When components are nested we can pass props to child components like this:
+When components are nested, we can pass props to child components like this:
 
 ```ruby
 class CodeClock
@@ -115,4 +115,4 @@ end
 ```
 
 
-Nice. Now we're move forward, and describe other parts.
+Nice. Now we are ready to move forward and describe other parts.
