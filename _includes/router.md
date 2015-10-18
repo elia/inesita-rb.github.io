@@ -1,6 +1,6 @@
 ## Router
 
-`Router` describes what `Components` are rendered depending on current url.
+`Router` describes what `Components` are rendered depending on current URL.
 
 ```ruby
 class Router
@@ -13,11 +13,11 @@ class Router
 end
 ```
 
-As we see. When browser points to `/` `Home` component is rendered, when we go to `/description` application will render `Description` component.
-You can pass a props to components with props hash.
-All routes a automatically named. First route is named `:home` second one `:description`
-You can use this names while creating link in components. Router instance is available in every component.
-For example lets create a simple navigation bar with `bootstrap`:
+As we see, when browser points to `/`, `Home` component is rendered, and when we go to `/description`, application will render `Description` component.
+You can pass props to components with a props hash.
+All routes are automatically named. First route is named `:home`, second one `:description`.
+You can use these names when creating links in components. Router instance is available in every component.
+For example, lets create a simple navigation bar with [bootstrap](http://getbootstrap.com):
 
 ```ruby
 class NavBar
@@ -49,8 +49,8 @@ class NavBar
 end
 ```
 
-`url_for(:name)` method return an url for given route.
+`url_for(:name)` method return a URL for a given route.
 
-`current_url?(:name)` return `true` if a given route is currently set.
+`current_url?(:name)` returns `true` if a given route is currently set.
 
-When we're use an `a` tag in components that are belongs to `Inesita::Application`, `onclick` are handled by router.
+When we're using an `a` tag in components that are belong to `Inesita::Application`, `onclick` events are handled by the router.
