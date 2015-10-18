@@ -15,5 +15,5 @@ class Layout
 end
 ```
 
-`outlet` is an component that will render all sub components.
-With this layout all pages will include a `Navbar` component.
+`outlet` is a component that will render all sub-components.
+With this layout, all pages will include a `Navbar` component.
