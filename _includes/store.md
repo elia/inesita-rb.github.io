@@ -1,6 +1,6 @@
 ## Store
 
-`Store` is a simply a wrapper for your data. You decides how you store it, and how to fetch it.
+`Store` is simply a wrapper for your data. You decide how to store the data, and how to fetch it.
 
 ```ruby
 class Store
@@ -20,7 +20,7 @@ class Store
 end
 ```
 
-This is the simplest store, that stores data within Hash. You can use it with your components like this:
+This is the simplest store, that stores data within a `Hash`. You can use it with your components like this:
 
 ```ruby
 class Input
