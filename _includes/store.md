@@ -28,7 +28,7 @@ class Input
 
   def change(e)
     store.set_value(e.target.value)
-    update_dom
+    render!
   end
 
   def render
@@ -36,4 +36,3 @@ class Input
   end
 end
 ```
-

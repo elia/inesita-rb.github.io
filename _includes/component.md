@@ -37,7 +37,7 @@ class Clock
     @time = Time.now
     every 1 do
       @time = Time.now
-      update_dom
+      render!
     end
   end
 
@@ -50,7 +50,7 @@ end
 ```
 
 Beautiful, clock works like a charm.
-We have added a simple block that executes once a second. In this case we reset the `@time` variable and update the component with `update_dom`
+We have added a simple block that executes once a second. In this case we reset the `@time` variable and update the component with `render!`
 Simple, isn't it?
 
 Components can be nested. For example, to add another component that wraps `Clock` in a `code` tag:
@@ -99,7 +99,7 @@ class Clock
     @time = Time.now
     every 1 do
       @time = Time.now
-      update_dom
+      render!
     end
   end
 
