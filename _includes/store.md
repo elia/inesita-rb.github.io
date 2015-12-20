@@ -32,7 +32,7 @@ class Input
   end
 
   def render
-    input type: "text", class: "form-control", value: store.get_value, onchange: ->(e) { change(e) }
+    input type: "text", class: "form-control", value: store.get_value, onchange: method(:change)
   end
 end
 ```
